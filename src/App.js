@@ -14,6 +14,7 @@ import regis from './images/regis.svg'
 import github from './images/github.svg'
 import gmail from './images/gmail.svg'
 import linkedin from './images/linkedin-2.svg'
+import shoppingList from './images/shoppingList.svg'
 import headshot from './images/headshot.JPG'
 
 import {
@@ -53,7 +54,8 @@ const App = () => {
   const dictDescription = read('dictionaryDescription.txt');
   const visualizerDescription = read('visualizerDescription.txt');
   const tictactoeDescription = read('tictactoeDescription.txt');
-
+  const shopItDescription = read("shopItDescription.txt");
+  
   const sections = ['About Me', 'Projects', 'Education', 'Contact Me'];
 
   const toHref = (title) => {
@@ -181,6 +183,22 @@ const App = () => {
                     <EuiText size='m'>{tictactoeDescription}</EuiText>
                   }
                   footer={<EuiButton aria-label='Go to Developers Tools' href='https://github.com/nthimothe/TicTacToe'>See it</EuiButton>}
+                />
+              </EuiFlexItem>
+              {/* SHOPPING LIST PROJECT */}
+              <EuiFlexItem>
+                <EuiCard
+                  icon={<EuiIcon size='xxl' type={shoppingList} alt='Shopping List Icon' />}
+                  title={
+                    <EuiFlexGroup gutterSize='xs' justifyContent='flexStart' wrap>
+                      <EuiFlexItem grow={false} style={{minWidth:50}}> <EuiBadge color='#FC5939' alt='Swift Badge' >Swift</EuiBadge></EuiFlexItem>
+                      <EuiFlexItem grow={false} style={{minWidth:500}}>{'ShopIt!'} </EuiFlexItem>
+                    </EuiFlexGroup>
+                  }
+                  description={
+                    <EuiText size='m'>{shopItDescription}</EuiText>
+                  }
+                  footer={<EuiButton aria-label='Go to Developers Tools' href='https://github.com/nthimothe/ShopItApp'>See it</EuiButton>}
                 />
               </EuiFlexItem>
             </EuiFlexGroup>
