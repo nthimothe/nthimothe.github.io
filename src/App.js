@@ -257,7 +257,7 @@ const App = () => {
                 layout='horizontal'
                 icon={<EuiIcon size='xxl' type={linkedin} />}
                 title='Nathan Thimothe'
-                href='https://www.linkedin.com/in/nathan-thimothe-807834188/'
+                href='https://www.linkedin.com/in/nathan-t-807834188'
              />
             </EuiFlexItem>
             </EuiFlexGroup>
