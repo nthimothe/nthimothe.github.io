@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown'
 import raw from 'raw.macro';
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 //import python from './images/python-brands.svg'
 //import java from './images/java-brands.svg'
 import book from './images/book.svg'
 import bot from './images/robot.svg'
+import amazon from './images/amazon.svg'
 import terminal from './images/terminal.svg'
 import tic_tac_toe from './images/tic-tac-toe-2.svg'
 import williams from './images/williams.svg'
@@ -15,7 +15,9 @@ import github from './images/github.svg'
 import gmail from './images/gmail.svg'
 import linkedin from './images/linkedin-2.svg'
 import shoppingList from './images/shoppingList.svg'
-import headshot from './images/headshot.JPG'
+import addressBook from './images/contact-book.svg'
+import headshot from './images/amazonID.png'
+
 
 import {
   EuiButton,
@@ -52,25 +54,25 @@ const App = () => {
   const name = read('name.txt');
   const botDescription = read('twitterbotDescription.txt');
   const dictDescription = read('dictionaryDescription.txt');
-  const visualizerDescription = read('visualizerDescription.txt');
+  const myContactsDescription = read('myContactsDescription.txt');
   const tictactoeDescription = read('tictactoeDescription.txt');
   const shopItDescription = read("shopItDescription.txt");
   
-  const sections = ['About Me', 'Projects', 'Education', 'Contact Me'];
+  const sections = ['About Me', 'Projects', 'Work Experience', 'Education', 'Contact Me'];
 
   const toHref = (title) => {
     return '#' + title.toLowerCase().split(' ').join('-');
   };
 
-  const makeIcon = (inputIcon) => {
-    return (
-      <svg
-        className='euiIcon euiIcon--medium euiIcon-isLoaded euiListGroupItem__icon'
-        viewBox='0 0 512 512'>
-        <path d={inputIcon.icon[4]} />
-      </svg>
-    );
-  };
+  // const makeIcon = (inputIcon) => {
+  //   return (
+  //     <svg
+  //       className='euiIcon euiIcon--medium euiIcon-isLoaded euiListGroupItem__icon'
+  //       viewBox='0 0 512 512'>
+  //       <path d={inputIcon.icon[4]} />
+  //     </svg>
+  //   );
+  // };
   
   const navItems = sections.map((section) => ({
     name: section,
@@ -131,62 +133,34 @@ const App = () => {
                 </EuiFlexGroup>
               }
                 description={
-                    <EuiText size='m'>{botDescription}</EuiText>
+                    <EuiText size='m'>{botDescription}</EuiText>   
                 }
-                  footer={<EuiButton aria-label='Go to Developers Tools' href="https://twitter.com/EphCovidUpdates">See it</EuiButton>}
+                href={
+                  "https://twitter.com/EphCovidUpdates"
+                }
                 />
               </EuiFlexItem>
-              {/* DICTIONARY PROJECT */}
-              <EuiFlexItem>
+               {/* MY CONTACTS PROJECT */}
+               <EuiFlexItem>
                 <EuiCard
-                  textAlign='center'
-                  icon={<EuiIcon size='xxl' type={book}  alt='Python (Programming Language) Icon' />}
+                  icon={<EuiIcon size='xxl' type={addressBook} alt='Address Book Icon' />}
                   title={
                     <EuiFlexGroup gutterSize='xs' justifyContent='flexStart' wrap>
-                      <EuiFlexItem grow={false} style={{minWidth:50}}> <EuiBadge color='#F6992E' alt='Java Badge' >Java</EuiBadge>  </EuiFlexItem>
-                      <EuiFlexItem grow={false} style={{minWidth:500}}>{'Local Dictionary'} </EuiFlexItem>
-                    </EuiFlexGroup>
-                  }
-                  description={
-                    <EuiText size='m'>{dictDescription}</EuiText>
-                  }
-                  footer={<EuiButton aria-label='Go to Developers Tools' href="https://github.com/nthimothe/FrDictionary">See it</EuiButton>}
-                />
-              </EuiFlexItem>
-              {/* CUSTOMER VISUALIZER PROJECT */}
-              <EuiFlexItem>
-                <EuiCard
-                  icon={<EuiIcon size='xxl' type='visualizeApp' alt='Chart (Visualization) Icon' />}
-                  title={
-                    <EuiFlexGroup gutterSize='xs' justifyContent='flexStart' wrap>
-                    <EuiFlexItem grow={false} style={{minWidth:50}}> <EuiBadge color='primary' alt='Python Badge' >Python</EuiBadge>  </EuiFlexItem>
-                    <EuiFlexItem grow={false} style={{minWidth:500}}>{'Customer Data Visualizer'} </EuiFlexItem>
+                    <EuiFlexItem grow={false} style={{minWidth:50}}> <EuiBadge color='#FC5939' alt='Swift Badge' >Swift</EuiBadge>  </EuiFlexItem>
+                    <EuiFlexItem grow={false} style={{minWidth:500}}>{'My Contacts'} </EuiFlexItem>
                   </EuiFlexGroup>
                   }
                   description={
-                    <EuiText size='m'>{visualizerDescription}</EuiText>
+                    <EuiText size='m'>{myContactsDescription}</EuiText>
                   }
-                  footer={<EuiButton aria-label='Go to Developers Tools' href="https://github.com/nthimothe/DukeBeverages-CustomerDataVisualizer">See it</EuiButton>}
+                  href={
+                    "https://github.com/nthimothe/ContactsApp"
+                  }
+                  //footer={<EuiButton aria-label='Go to Developers Tools' href=>See it</EuiButton>}
                 />
               </EuiFlexItem>
-              {/* TIC TAC TOE PROJECT */}
-              <EuiFlexItem>
-                <EuiCard
-                  icon={<EuiIcon size='xxl' type={tic_tac_toe} alt='Command Line Interface Icon' />}
-                  title={
-                    <EuiFlexGroup gutterSize='xs' justifyContent='flexStart' wrap>
-                      <EuiFlexItem grow={false} style={{minWidth:50}}> <EuiBadge color='#F6992E' alt='Java Badge' >Java</EuiBadge>  </EuiFlexItem>
-                      <EuiFlexItem grow={false} style={{minWidth:500}}>{'Tic Tac Toe'} </EuiFlexItem>
-                    </EuiFlexGroup>
-                  }
-                  description={
-                    <EuiText size='m'>{tictactoeDescription}</EuiText>
-                  }
-                  footer={<EuiButton aria-label='Go to Developers Tools' href='https://github.com/nthimothe/TicTacToe'>See it</EuiButton>}
-                />
-              </EuiFlexItem>
-              {/* SHOPPING LIST PROJECT */}
-              <EuiFlexItem>
+               {/* SHOPPING LIST PROJECT */}
+               <EuiFlexItem>
                 <EuiCard
                   icon={<EuiIcon size='xxl' type={shoppingList} alt='Shopping List Icon' />}
                   title={
@@ -198,7 +172,36 @@ const App = () => {
                   description={
                     <EuiText size='m'>{shopItDescription}</EuiText>
                   }
-                  footer={<EuiButton aria-label='Go to Developers Tools' href='https://github.com/nthimothe/ShopItApp'>See it</EuiButton>}
+                  href={
+                    "https://github.com/nthimothe/ShopItApp"
+                  }
+                  //footer={<EuiButton aria-label='Go to Developers Tools' href=''>See it</EuiButton>}
+                />
+              </EuiFlexItem>
+            </EuiFlexGroup>
+          </PageSection>
+          <EuiSpacer />
+           {/* WORK EXPERIENCE SECTION */}
+           <PageSection title='Work Experience'>
+            <EuiFlexGroup gutterSize='l' direction='column'>
+              {/* WILLIAMS WORK EXPERIENCE */}
+              <EuiFlexItem>
+                <EuiCard
+                    layout="horizontal"
+                    icon={<EuiIcon size='xxl' type={williams}/>}
+                    title='Williams College'
+                    description='Teaching Assistant, Feb 2019 - Present'
+                    href='https://www.williams.edu'
+                />
+              </EuiFlexItem>
+              {/* AMAZON WORK EXPERIENCE */}
+              <EuiFlexItem>
+              <EuiCard
+                  layout="horizontal"
+                  icon={<EuiIcon size='xxl' type={amazon} />}
+                  title='Amazon'
+                  description='Software Engineer Intern, Jun 2021 - Aug 2021'
+                  href='https://www.amazon.com'
                 />
               </EuiFlexItem>
             </EuiFlexGroup>
