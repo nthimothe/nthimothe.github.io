@@ -29,3 +29,15 @@ h2::before {
   visibility: hidden;
   pointer-events: none;
 }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f8fc;
+}
+
+.Page { 
+	padding-left: 60px;
+  padding-right: 60px;
+
+} 

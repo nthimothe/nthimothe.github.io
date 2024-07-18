@@ -26,7 +26,7 @@ HeaderLink.propTypes = {
 
 function read(filename){
   const content = raw(`./data/${filename}`);
-  return <ReactMarkdown source={content} />;
+  return <ReactMarkdown children={content} />;
 }
 
 const Header = ({ sections, className }) => {
