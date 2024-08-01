@@ -1,0 +1,19 @@
+{
+    "id": "education",
+    "cardTitle": "Education",
+    "list": [
+        {
+            "title": "Williams College",
+            "icon": "/images/williams.svg",
+            "link": "https://www.williams.edu/",
+            "caption": "B.A., Computer Science, Wilkins Fellow, Sept 2018 - May 2022"
+        },
+        {
+            "title": "Regis High School",
+            "icon": "/images/regis.svg",
+            "iconFilter": "filter-regis-red",
+            "link": "https://www.regis.org/",
+            "caption": "High School Diploma, Sept 2014 - Jun 2018"
+        }
+    ]
+}

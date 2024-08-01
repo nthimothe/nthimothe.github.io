@@ -1,0 +1,9 @@
+.icon {
+    width: 64px;
+    height: 64px;
+    padding-top: 20px;
+}
+
+.filter-regis-red{
+    filter: invert(16%) sepia(97%) saturate(5380%) hue-rotate(337deg) brightness(50%) contrast(93%);
+}
