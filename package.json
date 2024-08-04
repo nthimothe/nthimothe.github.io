@@ -1,32 +1,21 @@
 {
-  "name": "my-personal-website",
-  "version": "0.1.0",
+  "name": "material-ui-cra",
+  "version": "5.0.0",
   "private": true,
-  "homepage": "https://nthimothe.github.io/",
-  "dependencies": {
-    "@elastic/datemath": "^5.0.3",
-    "@elastic/eui": "^95.3.0",
-    "@fortawesome/free-brands-svg-icons": "^5.15.1",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "moment": "^2.29.1",
-    "raw.macro": "^0.4.2",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-markdown": "^9.0.1",
-    "react-scripts": "^5.0.1"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b master"
+    "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "^5.16.5",
+    "@mui/material": "next",
+    "react": "latest",
+    "react-dom": "^18.3.1",
+    "react-scripts": "latest"
   },
   "browserslist": {
     "production": [
@@ -41,6 +30,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }

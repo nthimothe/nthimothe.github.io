@@ -1,0 +1,24 @@
+{
+    "id": "workExperience",
+    "cardTitle": "Work Experience",
+    "list": [
+        {
+            "title": "Amazon",
+            "icon": "/images/amazon.svg",
+            "link": "https://www.amazon.com",
+            "caption": "Android Software Engineer, Sept 2022 - Present"
+        },
+        {
+            "title": "Williams College",
+            "icon": "/images/williams.svg",
+            "link": "https://www.williams.edu",
+            "caption": "Teaching Assistant, Feb 2019 - June 2022"
+        },
+        {
+            "title": "Amazon",
+            "icon": "/images/amazon.svg",
+            "link": "https://www.amazon.com",
+            "caption": "Software Engineer Intern, Jun 2021 - Aug 2021"
+        }
+    ]
+}

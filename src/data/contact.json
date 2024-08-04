@@ -1,0 +1,23 @@
+{
+    "id": "contactMe",
+    "cardTitle": "Contact Me",
+    "list": [
+        {
+            "title": "@nthimothe",
+            "icon": "/images/github.svg",
+            "link": "https://github.com/nthimothe/nthimothe.github.io"
+        },
+        {
+            "title": "nathanthimothe@gmail.com",
+            "icon": "/images/gmail.svg",
+            "link": "mailto:nathanthimothe@gmail.com"
+        },
+        {
+            "title": "Nathan Thimothe",
+            "icon": "/images/linkedinBlue.svg",
+            "link": "https://www.linkedin.com/in/nathan-t-807834188/"
+        }
+    ]
+}
+
+

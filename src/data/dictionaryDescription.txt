@@ -1,2 +1,0 @@
-This program allows a user to store and manipulate information
-on their local machine with very simple program commands. 
