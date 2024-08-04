@@ -1,18 +1,21 @@
 {
-  "name": "material-ui-cra",
-  "version": "5.0.0",
+  "name": "my-personal-website",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "dependencies": {
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
     "@mui/icons-material": "^5.16.5",
     "@mui/material": "next",
+    "gh-pages": "^6.1.1",
     "react": "latest",
     "react-dom": "^18.3.1",
     "react-scripts": "latest"
