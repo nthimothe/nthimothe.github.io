@@ -2,7 +2,8 @@
     "id": "aboutMe",
     "cardTitle": "About Me",
     "stanzas": [
-        "My name is Nathan Thimothe, and I am currently a Android Software Development Engineer at Amazon working on mobile authentication! I have experience in Java, Python, Kotlin, Jetpack Compose, C, Swift, Go, and Arduino and tools including Git and Android Studio.",
+        "My name is Nathan Thimothe, and I am currently an Android Software Development Engineer at Amazon working on mobile authentication! I have experience in Java, Python, Kotlin, Jetpack Compose, C, Swift, Go, and Arduino.",
+        "Recently, I've helped launch Passkeys at Amazon, a feature that allows users to conveniently and securely  sign in to their Amazon accounts without a paassword!",
         "Outside of work, I really enjoy learning new languages, reading, and listening to podcasts."
     ]
 }
