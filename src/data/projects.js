@@ -12,7 +12,7 @@ const projects = {
             "icon": <SmartToyOutlinedIcon fontSize='large'/>,
             "stanzas": [
                "This program is an automated Twitter bot that is repsonsible for posting Williams' COVID-19 updates \
-               on a daily basis. Overall, the project is a compilation of several modules \
+               on a daily basis. The project is a compilation of several modules \
                that are responsible for scraping, writing, visualizing, and posting data retrieved from \
                Williams College’s Coronavirus Dashboard."
             ]
